@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreenPage">
+
+    <fragment
+        android:id="@+id/splashScreenPage"
+        android:name="com.example.libraryrentalapp.SplashScreenPage"
+        android:label="fragment_splash_screen_page"
+        tools:layout="@layout/fragment_splash_screen_page" >
+        <action
+            android:id="@+id/action_splashScreenPage_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_splashScreenPage_to_dashboardPage"
+            app:destination="@id/dashboardPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.libraryrentalapp.Homepage"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepage_to_registrationPage"
+            app:destination="@id/registrationPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPage"
+        android:name="com.example.libraryrentalapp.RegistrationPage"
+        android:label="fragment_registration_page"
+        tools:layout="@layout/fragment_registration_page" >
+        <action
+            android:id="@+id/action_registrationPage_to_dashboardPage"
+            app:destination="@id/dashboardPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardPage"
+        android:name="com.example.libraryrentalapp.DashboardPage"
+        android:label="fragment_dashboard_page"
+        tools:layout="@layout/fragment_dashboard_page" >
+        <action
+            android:id="@+id/action_dashboardPage_to_rentedBooksPage"
+            app:destination="@id/rentedBooksPage" />
+        <action
+            android:id="@+id/action_dashboardPage_to_bookPage"
+            app:destination="@id/bookPage" />
+        <action
+            android:id="@+id/action_dashboardPage_to_createBookPage"
+            app:destination="@id/createBookPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/rentedBooksPage"
+        android:name="com.example.libraryrentalapp.RentedBooksPage"
+        android:label="fragment_rented_books_page"
+        tools:layout="@layout/fragment_rented_books_page" >
+        <action
+            android:id="@+id/action_rentedBooksPage_to_bookPage"
+            app:destination="@id/bookPage" />
+        <action
+            android:id="@+id/action_rentedBooksPage_to_dashboardPage"
+            app:destination="@id/dashboardPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookPage"
+        android:name="com.example.libraryrentalapp.BookPage"
+        android:label="fragment_book_page"
+        tools:layout="@layout/fragment_book_page" >
+        <action
+            android:id="@+id/action_bookPage_to_rentedBooksPage"
+            app:destination="@id/rentedBooksPage" />
+        <action
+            android:id="@+id/action_bookPage_to_dashboardPage"
+            app:destination="@id/dashboardPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/createBookPage"
+        android:name="com.example.libraryrentalapp.CreateBookPage"
+        android:label="fragment_create_book_page"
+        tools:layout="@layout/fragment_create_book_page" >
+        <action
+            android:id="@+id/action_createBookPage_to_bookPage"
+            app:destination="@id/bookPage" />
+    </fragment>
+</navigation>

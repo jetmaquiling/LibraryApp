@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LibraryRentalApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="category_array">
+        <item>Romance</item>
+        <item>Horror</item>
+        <item>Life and People</item>
+        <item>History</item>
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Science</item>
+        <item>Comedy</item>
+    </string-array>
+
+</resources>

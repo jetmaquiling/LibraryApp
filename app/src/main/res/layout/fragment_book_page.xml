@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookPage">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/book1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Life And People"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="How To Love Someone" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Professional and creative Book Covers don't have to cost a thing. Choose from hundreds of Book Cover Templates and customise it to suit your book!" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/to_rent_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date_to_return"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Return By April 27, 2023" />
+
+            <Button
+                android:id="@+id/rentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rent Book" />
+
+            <Button
+                android:id="@+id/change_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Return Date" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/return_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/to_return_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Return By April 27, 2023" />
+
+            <Button
+                android:id="@+id/return_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Return Book" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
